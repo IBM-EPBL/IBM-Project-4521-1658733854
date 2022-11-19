@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat bot</title>
+    <link rel="stylesheet" href="https://ibmbucketcss.s3.jp-tok.cloud-object-storage.appdomain.cloud/style1.css">
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ask your questions with our WatsonAssistantChatbot</h1>
+    
+        <h1></h1>
+        <img src='https://repository-images.githubusercontent.com/275387860/eb497480-0642-11eb-9aa3-ffdbb0e84246' alt="image" width="200px" height="200px">
+    
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "2df0cab3-5785-4ce5-a2cd-a04fc3b837b7", // The ID of this integration.
+        region: "au-syd", // The region your integration is hosted in.
+        serviceInstanceID: "aa342a95-ddb7-4081-a7d1-7dba24ed4577", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>
+</html>
